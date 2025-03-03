@@ -1,0 +1,8 @@
+.env
+useful.txt
+myvenv/*
+temp_audio/*
+chunk_audio/*
+youtube_videos.txt
+data/*
+__pycache__
