@@ -1,19 +1,19 @@
-# Travel RAG Assistant 🌍
+# Travel RAG Assistant
 
 A Retrieval-Augmented Generation (RAG) system for travel recommendations, powered by audio processing and LLMs.
 
 [![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io/)
 [![Groq](https://img.shields.io/badge/Groq-00FF00?logo=groq&logoColor=black)](https://groq.com/)
 
-## Features ✨
+## Features
 
-- 🎧 Upload and transcribe travel audio recordings
-- 🔍 Semantic search powered by FAISS vector database
-- 💬 Natural language Q&A with Groq's LLM (Llama3-70B)
-- 📁 Persistent document storage and indexing
-- 🎨 Modern Streamlit UI with responsive design
+- Upload and transcribe travel audio recordings
+- Semantic search powered by FAISS vector database
+- Natural language Q&A with Groq's LLM (Llama3-70B)
+- Persistent document storage and indexing
+- Modern Streamlit UI with responsive design
 
-## Tech Stack ⚙️
+## Tech Stack
 
 ![Tech Stack](https://skillicons.dev/icons?i=python,pytorch,git,github,md)
 
@@ -24,7 +24,7 @@ A Retrieval-Augmented Generation (RAG) system for travel recommendations, powere
 - **LLM**: Groq API (Llama3-70B)
 - **UI**: Streamlit
 
-## Installation 🛠️
+## Installation
 
 1. Clone repository:
 ```bash
@@ -48,7 +48,7 @@ A Retrieval-Augmented Generation (RAG) system for travel recommendations, powere
    echo -e "GROQ_API_KEY=your_api_key_here\nHF_TOKEN=your-huggingface-key" > .env
 ```
 
-## Folder Structure 📂
+## Folder Structure
 ```bash
 .
 ├── src/
@@ -68,7 +68,7 @@ A Retrieval-Augmented Generation (RAG) system for travel recommendations, powere
 └── audio/                    # Contains the mp3 files
 ```
 
-## Configuration ⚙️
+## Configuration
 
 1. Get Groq API key from [console.groq.com](https://console.groq.com/)
 
@@ -77,7 +77,7 @@ A Retrieval-Augmented Generation (RAG) system for travel recommendations, powere
    GROQ_API_KEY=<your-groq-key>
    HF_TOKEN=<your-huggingface-key>
 ```
-## Usage 🚀
+## Usage
 
 Start the application:
 ```bash
