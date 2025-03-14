@@ -2,8 +2,6 @@
 
 A Retrieval-Augmented Generation (RAG) system for travel recommendations, powered by audio processing and LLMs.
 
-[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io/)
-[![Groq](https://img.shields.io/badge/Groq-00FF00?logo=groq&logoColor=black)](https://groq.com/)
 
 ## Features
 
@@ -15,9 +13,6 @@ A Retrieval-Augmented Generation (RAG) system for travel recommendations, powere
 
 ## Tech Stack
 
-![Tech Stack](https://skillicons.dev/icons?i=python,pytorch,git,github,md)
-
-**Core Components**:
 - **Backend**: Python 3.10+
 - **NLP**: HuggingFace Transformers, LangChain
 - **Vector DB**: FAISS
