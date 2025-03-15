@@ -33,7 +33,17 @@ def split_audio(input_file, chunk_length_ms=60000):
     chunks = [audio[i:i + chunk_length_ms] for i in range(0, len(audio), chunk_length_ms)]
     return chunks
 
-
+def transcribe_audio(audio_chunk,chunk_index,temp_folder):
+    chunk_file = os.path.join(temp_folder, f"temp_chunk_{chunk_index}.ogg")
+    with open(chunk_file, "wb") as f:
+        audio_chunk.export(f, format="ogg")
+    with open(chunk_file, "rb") as audio_file:
+        transcript = groq.audio.transcriptions.create(
+            model="whisper-large-v3",
+            file=audio_file,
+            response_format="text"
+        )
+    return transcript
 
 def process_folder(input_folder, output_folder, temp_folder, chunk_folder):
     if not os.path.exists(output_folder):
